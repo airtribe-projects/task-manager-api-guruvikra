@@ -1,6 +1,7 @@
-const tap = require("tap");
-const supertest = require("supertest");
-const app = require("../app");
+import tap from "tap";
+import supertest from "supertest";
+import app from "../src/app.js";
+
 const server = supertest(app);
 
 tap.test("POST /tasks", async (t) => {
